@@ -10,22 +10,30 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./index.css">
+
+    <!-- Icones Fontawesome -->
+    <script src="https://kit.fontawesome.com/3dd4f91ea1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container-fluid">
         <header id="cabecalho">
             
-            <div class="row">
-                <div class="col-3">
+            <div class="row"> <!-- Por algum motivo, o centralizarDiv não vai em tudo se colocar aqui -->
+                <div class="col-3 centralizarDiv">
                     <p><a href="./index.html"><img id="logo" src="./imagens/logos/Logo Transparente Branca.png" alt="Logo"></a></p>
                 </div>
 
-                <div class="col">
-                    <p>PESQUISAR</p>
+                <div class="col centralizarDiv">
+                    <div class="input-group mb-1">
+                        <input type="search" class="form-control inputPesquisar" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn submitPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                      </div>
                 </div>
 
-                <div class="col-3">
-                    <p>MODO NOTURNO</p>
+                <div class="col-3 centralizarDiv">
+                    Modo Noturno
                 </div>
             </div>
             

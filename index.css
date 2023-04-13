@@ -12,7 +12,23 @@
 }
 
 #logo {
-    width: 300px;
-    height: 200px;
+    width: 150%;
+    height: 150px;
     object-fit: cover;
+}
+
+.centralizarDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inputPesquisar {
+    border-radius: 50px;
+    border-bottom-right-radius: 0px;
+}
+.submitPesquisar {
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
 }
