@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+#cabecalho, #rodape {
+    background-color: #080F47;
+    color: white;
+}
+#logo {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Pesquisar */
+.inputPesquisar {
+    border-radius: 50px;
+    border-bottom-right-radius: 0px;
+}
+.submitPesquisar {
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
+    background-color: white;
+}
+
+/* Modo Noturno */
+.ModoNoturno{
+    background-color: white;
+    border-radius: 50px;
+    width: 80px;
+    height: 50px;
+}
+#btnLua{
+    background-color: #FF6300;
+    border: #FF6300 ;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: 2s;
+}
+#btnSol{
+    background-color: #080F47;
+    border: #080F47 ;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: 2s;
+    display: none;
+}
+
+
+/* Menu */
+#menu {
+    background-color: #FF6300;
+    color: white;
+    height: 500px;
+    width: 100%;
+}
+.dropItem {
+    text-decoration: none;
+    color: white;
+}
+.dropMenu {
+    text-decoration: none;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+}
+
+
+
+
+.centralizarDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
