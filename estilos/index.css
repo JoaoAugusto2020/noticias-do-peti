@@ -63,18 +63,28 @@
     height: 500px;
     width: 100%;
 }
+#dropItens {
+    margin-left: 10px;
+    transition: 1s;
+    visibility: hidden;
+    height: 0px;
+    overflow: hidden;
+}
 .dropItem {
     text-decoration: none;
     color: white;
 }
-.dropMenu {
-    text-decoration: none;
-    background-color: transparent;
-    border: 0px;
+#iconAngle1 {
     color: white;
+    float: right;
+    margin-left: 5px;
+    margin-top: 4px;
+    transition-property: color 0s;
 }
-
-
+#iconAngle1:hover {
+    color:#080F47;
+    transition-property: color 0s;
+}
 
 
 .centralizarDiv {
@@ -82,5 +92,26 @@
     align-items: center;
     justify-content: center;
 }
-
-
+.desistilizacao {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.textoBranco {
+    color: white;
+    text-decoration: none;
+}
+.textoBranco:hover {
+    color: #080F47;
+    text-decoration: none;
+}
+.textoPreto {
+    color: black;
+    text-decoration: none;
+}
+.textoPreto:hover {
+    color: #FF6300;
+    text-decoration: none;
+}
