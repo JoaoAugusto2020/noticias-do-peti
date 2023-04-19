@@ -6,29 +6,34 @@ function trocarBtn(val){
         document.getElementById('btnLua').style.display='none';
         document.getElementById('btnSol').style.display='block';
 
-
-        document.getElementById("btnSol").style.transition='2s';
         document.getElementById("btnSol").style.marginLeft='35px';
-        
         document.getElementById("btnLua").style.marginLeft='35px';
-        document.getElementById("btnLua").style.transition='2s';
     }
     if(val==2){
         document.getElementById('btnLua').style.display='block';
         document.getElementById('btnSol').style.display='none';
 
-        
         document.getElementById("btnLua").style.marginLeft='5px';
         document.getElementById("btnSol").style.marginLeft='5px';
-        document.getElementById("btnLua").style.transition='2s';
-        document.getElementById("btnSol").style.transition='2s';
     }
 }
 
-function dropdownList(val=val+1){
-    if (val%2==0) {
-        document.getElementById('dropItens').style.display='none';
+var cont = 0;
+function dropdownList(valor){ 
+    cont+=valor;
+    
+    if (cont%2==0) {
+        document.getElementById('dropItens').style.visibility='hidden';
+        document.getElementById('dropItens').style.height='0px';
+
+        document.getElementById('iconAngle1').style.transform='rotate(00deg)';
+        document.getElementById('iconAngle1').style.transition='0.2s';
+
     }else{
-        document.getElementById('dropItens').style.display='block';
+        document.getElementById('dropItens').style.visibility='visible';
+        document.getElementById('dropItens').style.height='80px';
+
+        document.getElementById('iconAngle1').style.transform='rotate(-90deg)';
+        document.getElementById('iconAngle1').style.transition='0.2s';
     }
 }
