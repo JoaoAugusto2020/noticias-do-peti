@@ -1,0 +1,54 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+
+/* Texto */
+.centralizarDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desistilizacao {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.textoBranco, .linkBrancoAzul, .linkBrancoLaranja {
+    color: white;
+    text-decoration: none;
+}
+.textoPreto, .linkPretoAzul, .linkPretoLaranja {
+    color: black;
+    text-decoration: none;
+}
+.linkBrancoLaranja:hover {
+    color: #080F47;
+    text-decoration: none;
+}
+.linkPretoLaranja:hover {
+    color: #080F47;
+    text-decoration: none;
+}
+.linkBrancoAzul:hover {
+    color: #FF6300;
+    text-decoration: none;
+}
+.linkPretoAzul:hover {
+    color: #FF6300;
+    text-decoration: none;
+}
+.titulo {
+    margin: 50px 0px 20px 0px;
+    
+}

@@ -1,7 +1,5 @@
-//Recebe qual valor que está no input radio
+//MODO NOTURNO
 function trocarBtn(val){
-
-    //Relativamente esconde um form e mostrando outro inversamente
     if(val==1){
         document.getElementById('btnLua').style.display='none';
         document.getElementById('btnSol').style.display='block';
@@ -18,22 +16,22 @@ function trocarBtn(val){
     }
 }
 
-var cont = 0;
+//DROPTEXT
+var cont2 = 0;
 function dropdownList(valor){ 
-    cont+=valor;
+    cont2+=valor;
     
-    if (cont%2==0) {
+    if (cont2%2==0) {
         document.getElementById('dropItens').style.visibility='hidden';
         document.getElementById('dropItens').style.height='0px';
 
-        document.getElementById('iconAngle1').style.transform='rotate(00deg)';
-        document.getElementById('iconAngle1').style.transition='0.2s';
-
+        document.getElementById('iconAngleDrop').style.transform='rotate(00deg)';
+        document.getElementById('iconAngleDrop').style.transition='0.2s';
     }else{
         document.getElementById('dropItens').style.visibility='visible';
         document.getElementById('dropItens').style.height='80px';
 
-        document.getElementById('iconAngle1').style.transform='rotate(-90deg)';
-        document.getElementById('iconAngle1').style.transition='0.2s';
+        document.getElementById('iconAngleDrop').style.transform='rotate(-90deg)';
+        document.getElementById('iconAngleDrop').style.transition='0.2s';
     }
 }
