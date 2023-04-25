@@ -67,7 +67,6 @@
 #Menu {
     background-color: #FF6300;
     color: white;
-    height: 1500px;
     width: 100%;
     padding: 20px;
 
@@ -106,4 +105,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    left: 10%;
+}
+
+.destaquesItem{
+    margin: 20px 30px 50px 30px;
+    text-align: justify;
+}
+.destaquesItemTexto {
+    height: 160px;
+    overflow: hidden;
+}
+.gradientHidden {
+    bottom: 15px;
+    position: absolute;
+    z-index: 1;
+    height: 40px;
+    width: 96%;
+    background-image: linear-gradient(transparent, rgb(255, 255, 255));
+}
+.imgCapaPequena{
+    height: 200px;
 }
