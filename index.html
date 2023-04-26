@@ -39,14 +39,17 @@
                         </div>
                     </div>
 
-                    <a class="linkBrancoAzul" href="#">Filtro Avançado</a>
+                    <a class="linkBrancoAzul filtroAvancado" href="#">Filtro Avançado</a>
 
                 </div>
 
-                <!-- Assesibilidade -->
-                <div class="col-3 centralizarDiv">
-                    <a class="linkBrancoAzul" href="#">+A</a>
-                    <a class="linkBrancoAzul" href="#">-A</a>
+                <!-- Acessibilidade -->
+                <div class="col-2 centralizarDiv acessibilidade">
+                    
+                    <div class="acessibilidadeTexto">
+                        <button class="btn aumentarTexto linkBrancoAzul">+A</button>
+                        <button class="btn diminuirTexto linkBrancoAzul">-A</button>
+                    </div>
 
                     <div class="modoNoturno">
                         <button id="btnLua" value="1" onclick="trocarBtn(1)">
@@ -66,23 +69,27 @@
             <div class="row">
 
                 <!-- Menu -->
-                <div id="Menu" class="col-2">
-                    
-                    <div class="paginas">
-                        <button class="dropText desistilizacao textoBranco" type="button" onclick="dropdownList(1)">Categorias 
-                            <i id="iconAngleDrop" class="fa-sharp fa-solid fa-angle-down"></i>
-                        </button><br>
-                        <div id="dropItens">
-                            <a class="linkBrancoLaranja" href="#">Ensino</a><br>
-                            <a class="linkBrancoLaranja" href="#">Pesquisa</a><br>
-                            <a class="linkBrancoLaranja" href="#">Extensão</a><br>
+                <div class="hamburguer">
+                    <button id="hamburguerBtn" class="btn" onclick="menuShow(1)"><i id="iconAngleHide" class="fa-solid fa-angle-left fa-xl" style="color: #ffffff;"></i></button>
+                </div>
+
+                <div class="col-2">
+                    <div id="Menu">
+                        <div id="paginas">
+                            <i id="iconAngleDrop" class="fa-sharp fa-solid fa-angle-down" onclick="dropdownList(1)"></i>
+                            <button class="dropText desistilizacao textoBranco" type="button" onclick="dropdownList(1)">Categorias</button><br>
+                            
+                            <div id="dropItens">
+                                <a class="linkBrancoLaranja" href="#">Ensino</a><br>
+                                <a class="linkBrancoLaranja" href="#">Pesquisa</a><br>
+                                <a class="linkBrancoLaranja" href="#">Extensão</a><br>
+                            </div>
+                            
+                            <a class="linkBrancoLaranja" href="#">Sobre nós</a><br>
+
+                            <a class="linkBrancoLaranja" href="#">Contato</a>
                         </div>
-                        
-                        <a class="linkBrancoLaranja" href="#">Sobre nós</a><br>
-
-                        <a class="linkBrancoLaranja" href="#">Contato</a>
                     </div>
-
                 </div>
 
                 <!-- Conteúdo -->
