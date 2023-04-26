@@ -24,6 +24,7 @@
     border-radius: 50px;
     border-bottom-right-radius: 0px;
     border: none;
+    max-width: 90%;
 }
 .submitPesquisar {
     border-radius: 50px;
@@ -31,12 +32,35 @@
     border: none;
     background-color: white;
 }
+.inputPesquisar:focus, .submitPesquisar:focus {
+    box-shadow: none;
+}
+.filtroAvancado {
+    white-space: nowrap;
+    text-decoration: underline;
+}
+
+
+
+/* Acessibilidade */
+.acessibilidade > * {
+    padding: 20px;
+}
+.acessibilidadeTexto > button {
+    padding: 0px;
+}
+.acessibilidadeTexto > button:focus {
+    box-shadow: none;
+}
+
+
 
 /* Modo Noturno */
 .modoNoturno{
     background-color: white;
     border-radius: 50px;
     width: 80px;
+    max-width: 80px;
     height: 50px;
     padding: 0px;
 }
@@ -48,7 +72,6 @@
     height: 40px;
     margin-top: 5px;
     margin-left: 5px;
-    /* transition: 2s; */
 }
 #btnSol{
     background-color: #080F47;
@@ -58,30 +81,36 @@
     height: 40px;
     margin-top: 5px;
     margin-left: 5px;
-    transition: 2s;
     display: none;
 }
+
 
 
 /* Menu */
 #Menu {
     background-color: #FF6300;
     color: white;
+    height: 100%;
     width: 100%;
     padding: 20px;
-
     display: flex;
     justify-content: center;
+    transition: 1s;
+    overflow: hidden;
 }
-.paginas {
+.col-2:has(> #Menu) {
+    padding: 0px;
+    margin: 0pxs;
+}
+#paginas {
     position: sticky; /*Não quer funcionar pq o #Menu já está com o flex*/
     z-index: 1;
     top: 10px;
 }
 #iconAngleDrop {
     color: white;
-    float: right;
-    margin-left: 5px;
+    float: left;
+    margin-left: -20px;
     margin-top: 4px;
     transition: color 0s;
 }
@@ -101,6 +130,26 @@
     transition: color 0s;
 }
 
+
+
+/* Hamburguer */
+#hamburguerBtn{
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: #080F47;
+    border-radius: 50px;
+    background-color: #080F47;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transition: 0.1s;
+}
+
+
+
+
+/* Carrossel */
 #carouselExampleCaptions{
     display: flex;
     align-items: center;
@@ -109,6 +158,9 @@
     left: 10%;
 }
 
+
+
+/* Conteúdo */
 .destaquesItem{
     margin: 20px 30px 50px 30px;
     text-align: justify;
