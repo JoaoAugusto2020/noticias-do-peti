@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Notícias do PETi</title>
+    <link rel="icon" type="image/x-icon" href="./imagens/logos/Favicon.png">
+
+    <!-- Icones da Fontawesome -->
+    <!-- <script src="https://kit.fontawesome.com/3dd4f91ea1.js" crossorigin="anonymous"></script> -->
+    <link href="./imagens/icons/fontawesome-free-6.4.0-web/css/all.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="./bootstrap-4.6.2-dist/js/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> -->
+    <script src="./bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- CSS e JS Próprio-->
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <script type="text/javascript" src="./scripts/#.js"></script>
+    <script type="text/javascript" src="./scripts/base.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <!-- CABEÇALHO -->
+            <div id="cabecalho" class="row">
+                
+                <!-- Logo -->
+                <div class="col-3 centralizarDiv">
+                    <p><a href="./index.html"><img id="logo" src="./imagens/logos/Logo Transparente Branca.png" alt="Logo"></a></p>
+                </div>
+
+                <!-- Pesquisar -->
+                <div class="col centralizarDiv">
+
+                    <div class="input-group mb-1">
+                        <input type="search" class="form-control inputPesquisar" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn submitPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <a class="linkBrancoAzul filtroAvancado" href="#">Filtro Avançado</a>
+
+                </div>
+
+                <!-- Acessibilidade -->
+                <div class="col-2 centralizarDiv acessibilidade">
+                    
+                    <div class="acessibilidadeTexto">
+                        <button class="btn aumentarTexto linkBrancoAzul">+A</button>
+                        <button class="btn diminuirTexto linkBrancoAzul">-A</button>
+                    </div>
+
+                    <div class="modoNoturno">
+                        <button id="btnLua" value="1" onclick="trocarBtn(1)">
+                            <i class="fa-solid fa-moon fa-2xl" style="color: #ffffff;" ></i>
+                        </button>
+                        <button id="btnSol" value="2" onclick="trocarBtn(2)">
+                            <i class="fa-solid fa-sun fa-xl" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+
+        <div class="conteudo">
+            <div class="row">
+
+                <!-- Menu -->
+                <div class="hamburguer">
+                    <button id="hamburguerBtn" class="btn" onclick="menuShow(1)"><i id="iconAngleHide" class="fa-solid fa-angle-left fa-xl" style="color: #ffffff;"></i></button>
+                </div>
+
+                
+                <div id="MenuAbsolute" class="col-2">
+                    <div id="Menu">
+                        <div id="paginas">
+                            <a class="linkBrancoLaranja" href="./index.html">Início</a><br><br>
+
+                            <i id="iconAngleDrop" class="fa-sharp fa-solid fa-angle-down" onclick="dropdownList(1)"></i>
+                            <button class="dropText desistilizacao textoBranco" type="button" onclick="dropdownList(1)">Categorias</button><br>
+                            
+                            <div id="dropItens">
+                                <a class="linkBrancoLaranja" href="./ensino.html">Ensino</a><br>
+                                <a class="linkBrancoLaranja" href="./pesquisa.html">Pesquisa</a><br>
+                                <a class="linkBrancoLaranja" href="./extensao.html">Extensão</a><br>
+                            </div>
+                            
+                            <a class="linkBrancoLaranja" href="./sobre.html">Sobre nós</a><br>
+
+                            <a class="linkBrancoLaranja" href="#rodape">Contato</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="col">
+                    <div class="container">
+                        
+
+
+                        <!-- CONTEUDO AQUI -->
+
+
+
+                        
+                    </div>
+
+                    <a class="voltarAoTopo linkPretoAzul centralizarDiv" href="#top">Voltar ao topo</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="rodape" class="row">
+                <div class="col-md sobreNos">
+                    <h3 class="centralizarDiv">Sobre Nós</h3>
+
+                    <ul>
+                        <li class="listItem"><a class="linkBrancoAzul" href="./sobre.html#Historia">História</a></li>
+                        <li class="listItem"><a class="linkBrancoAzul" href="./sobre.html#Valores">Valores</a></li>
+                        <li class="listItem"><a class="linkBrancoAzul" href="./sobre.html#Equipe">Equipe</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md contato">
+                    <h3 class="centralizarDiv">Contato</h3>
+
+                    <ul class="listMenuNone">
+                        <li class="listItem"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i><a class="linkBrancoAzul" href="#"> Instagram</a></li>
+                        <li class="listItem"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i><a class="linkBrancoAzul" href="#"> WhatsApp</a></li>
+                        <li class="listItem"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i><a class="linkBrancoAzul" href="#"> Email</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
