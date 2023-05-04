@@ -21,6 +21,7 @@
     <!-- CSS e JS Próprio-->
     <link rel="stylesheet" href="./estilos/estilos.css">
     <script type="text/javascript" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="./scripts/base.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -77,21 +78,24 @@
                     <button id="hamburguerBtn" class="btn" onclick="menuShow(1)"><i id="iconAngleHide" class="fa-solid fa-angle-left fa-xl" style="color: #ffffff;"></i></button>
                 </div>
 
-                <div class="col-2">
+                
+                <div id="MenuAbsolute" class="col-2">
                     <div id="Menu">
                         <div id="paginas">
+                            <a class="linkBrancoLaranja" href="./index.html">Início</a><br><br>
+
                             <i id="iconAngleDrop" class="fa-sharp fa-solid fa-angle-down" onclick="dropdownList(1)"></i>
                             <button class="dropText desistilizacao textoBranco" type="button" onclick="dropdownList(1)">Categorias</button><br>
                             
                             <div id="dropItens">
-                                <a class="linkBrancoLaranja" href="#">Ensino</a><br>
-                                <a class="linkBrancoLaranja" href="#">Pesquisa</a><br>
-                                <a class="linkBrancoLaranja" href="#">Extensão</a><br>
+                                <a class="linkBrancoLaranja" href="./ensino.html">Ensino</a><br>
+                                <a class="linkBrancoLaranja" href="./pesquisa.html">Pesquisa</a><br>
+                                <a class="linkBrancoLaranja" href="./extensao.html">Extensão</a><br>
                             </div>
                             
-                            <a class="linkBrancoLaranja" href="#">Sobre nós</a><br>
+                            <a class="linkBrancoLaranja" href="./sobre.html">Sobre nós</a><br>
 
-                            <a class="linkBrancoLaranja" href="#">Contato</a>
+                            <a class="linkBrancoLaranja" href="#rodape">Contato</a>
                         </div>
                     </div>
                 </div>
@@ -233,9 +237,9 @@
                     <h3 class="centralizarDiv">Sobre Nós</h3>
 
                     <ul>
-                        <li class="listItem"><a class="linkBrancoAzul" href="#">Valores</a></li>
-                        <li class="listItem"><a class="linkBrancoAzul" href="#">História</a></li>
-                        <li class="listItem"><a class="linkBrancoAzul" href="#">Equipe</a></li>
+                        <li class="listItem"><a class="linkBrancoAzul" href="./sobre.html#Historia">História</a></li>
+                        <li class="listItem"><a class="linkBrancoAzul" href="./sobre.html#Valores">Valores</a></li>
+                        <li class="listItem"><a class="linkBrancoAzul" href="./sobre.html#Equipe">Equipe</a></li>
                     </ul>
                 </div>
 

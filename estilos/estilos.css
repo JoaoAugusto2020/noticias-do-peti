@@ -1,4 +1,6 @@
-@import url(./arquivo-base.css);
-@import url(./padrao.css);
+@import url(./estrutura-base.css);
+@import url(./padronizacao.css);
 
+/* Páginas */
 @import url(./index.css);
+@import url(./sobre.css);
