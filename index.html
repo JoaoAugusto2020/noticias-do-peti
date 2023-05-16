@@ -30,39 +30,56 @@
             <div id="cabecalho" class="row">
                 
                 <!-- Logo -->
-                <div class="col-3 centralizarDiv">
+                <div class="col-2 centralizarDiv">
                     <p><a href="./index.html"><img id="logo" src="./imagens/logos/Logo Transparente Branca.png" alt="Logo"></a></p>
                 </div>
 
                 <!-- Pesquisar -->
-                <div class="col centralizarDiv">
-
-                    <div class="input-group mb-1">
-                        <input type="search" class="form-control inputPesquisar" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button type="submit" class="btn submitPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div id="Pesquisar" class="col">
+                    <div class="row">
+                        <div class="input-group mb-1">
+                            <input type="search" class="form-control inputPesquisar" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn submitPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
                         </div>
+                    
+                        <a class="filtroAvancado linkBrancoAzul" href="#">Filtro Avançado</a>
                     </div>
-
-                    <a class="linkBrancoAzul filtroAvancado" href="#">Filtro Avançado</a>
-
                 </div>
 
-                <!-- Acessibilidade -->
-                <div class="col-2 centralizarDiv acessibilidade">
-                    
-                    <div class="acessibilidadeTexto">
-                        <button class="btn aumentarTexto linkBrancoAzul">+A</button>
-                        <button class="btn diminuirTexto linkBrancoAzul">-A</button>
-                    </div>
+                <!-- Login e Acessibilidade -->
+                <div id="LoginAcessibilidade" class="col-2">
+                    <div class="row">    
 
-                    <div class="modoNoturno">
-                        <button id="btnLua" value="1" onclick="trocarBtn(1)">
-                            <i class="fa-solid fa-moon fa-2xl" style="color: #ffffff;" ></i>
-                        </button>
-                        <button id="btnSol" value="2" onclick="trocarBtn(2)">
-                            <i class="fa-solid fa-sun fa-xl" style="color: #ffffff;"></i>
-                        </button>
+                        <!-- Login -->
+                        <div class="col-12">
+                            <div class="Autenticacao">
+                                <button class="btnEntrar">
+                                    Entrar
+                                </button>
+                            </div>
+                        </div>
+                        
+
+                        <!-- Acessibilidade -->
+                        <div class="col">
+                            <div class="acessibilidade centralizarDiv">
+                                <div class="acessibilidadeTexto">
+                                    <button class="btn aumentarTexto linkBrancoAzul">+A</button>
+                                    <button class="btn diminuirTexto linkBrancoAzul">-A</button>
+                                </div>
+
+                                <div class="modoNoturno">
+                                    <button id="btnLua" value="1" onclick="trocarBtn(1)">
+                                        <i class="fa-solid fa-moon fa-2xl" style="color: #ffffff;" ></i>
+                                    </button>
+                                    <button id="btnSol" value="2" onclick="trocarBtn(2)">
+                                        <i class="fa-solid fa-sun fa-xl" style="color: #ffffff;"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

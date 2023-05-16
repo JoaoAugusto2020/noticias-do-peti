@@ -34,8 +34,31 @@
     white-space: nowrap;
     text-decoration: underline;
 }
+#Pesquisar {
+    margin: 40px 10%;
+}
 
 
+
+
+
+
+/* Login e Acessibilidade */
+#LoginAcessibilidade {
+    background-color: rgb(92, 191, 72);
+    padding: 0px;
+    margin: 0px;
+}
+.btnEntrar {
+    background-color: rgb(208, 22, 22);
+    border: none;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+.btnEntrar>:focus {
+    box-shadow: none;
+}
 
 /* Acessibilidade */
 .acessibilidade > * {
