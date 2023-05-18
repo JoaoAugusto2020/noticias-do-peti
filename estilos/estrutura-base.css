@@ -5,7 +5,12 @@
     background-color: #080F47;
     color: white;
 }
-#logo {
+#Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoImg {
     min-height: 50px;
     max-height: 200px;
     max-width: 100%;
@@ -13,6 +18,10 @@
 }
 
 
+header > div {
+    margin: 0px;
+    padding: 0px;
+}
 
 /* Pesquisar */
 .inputPesquisar {
@@ -35,52 +44,69 @@
     text-decoration: underline;
 }
 #Pesquisar {
-    margin: 40px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 
 
 
 
 /* Login e Acessibilidade */
-#LoginAcessibilidade {
-    background-color: rgb(92, 191, 72);
+#Login {
+    background-color: #080F47;
     padding: 0px;
     margin: 0px;
+    box-sizing: content-box;
+    border-left: 4px solid white;
+    box-shadow: 200px 0px 15px -200px rgba(0,0,0,0.5) inset;
+    -webkit-box-shadow: 200px 0px 15px -200px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: 200px 0px 15px -200px rgba(0,0,0,0.5) inset;
 }
 .btnEntrar {
-    background-color: rgb(208, 22, 22);
+    background-color: #FF6300;
     border: none;
     width: 100%;
-    height: 50px;
+    height: 100%;
     color: white;
+    box-shadow: 200px 0px 15px -200px rgba(0,0,0,0.5) inset;
+    -webkit-box-shadow: 200px 0px 15px -200px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: 200px 0px 15px -200px rgba(0,0,0,0.5) inset;
+    
 }
 .btnEntrar>:focus {
     box-shadow: none;
 }
+.Autenticacao {
+    height: 50%;
+
+}
 
 /* Acessibilidade */
-.acessibilidade > * {
-    padding: 20px;
+.Acessibilidade{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.acessibilidadeTexto > button {
-    padding: 0px;
+    /* Botão Texto */
+    .acessibilidadeTexto > button {
+        padding: 0px;
+    }
+    .acessibilidadeTexto > button:focus {
+        box-shadow: none;
+    }
+.acessibilidadeTexto, .modoNoturno {
+    margin: 0px 10px;
 }
-.acessibilidadeTexto > button:focus {
-    box-shadow: none;
-}
-
-
-
 /* Modo Noturno */
 .modoNoturno{
     background-color: white;
     border-radius: 50px;
     width: 80px;
-    max-width: 80px;
+    min-width: 80px;
     height: 50px;
-    padding: 0px;
 }
 #btnLua{
     background-color: #FF6300;

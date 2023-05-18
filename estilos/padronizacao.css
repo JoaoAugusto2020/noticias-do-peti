@@ -13,9 +13,14 @@ body{
     font-size: 100%;
     list-style-type: none;
 }
+@viewport {
+    zoom: 1.00;
+    min-zoom: 0.5;
+    max-zoom: 1.25;
+}
 
 /* Texto */
-.centralizarDiv {
+.centralizarItens {
     display: flex;
     align-items: center;
     justify-content: center;
