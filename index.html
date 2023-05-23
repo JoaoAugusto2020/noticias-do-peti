@@ -21,9 +21,9 @@
 </head>
 <body>
     <div class="container-fluid"> 
+        
+        <!-- CABEÇALHO -->
         <header>
-
-            <!-- CABEÇALHO -->
             <div id="cabecalho" class="row">
                 
                 <!-- Logo -->
@@ -81,31 +81,33 @@
             <div class="row">
 
                 <!-- Menu -->
-                <div class="hamburguer">
-                    <button id="hamburguerBtn" class="btn" onclick="menuShow(1)"><i id="iconAngleHide" class="fa-solid fa-angle-left fa-xl" style="color: #ffffff;"></i></button>
-                </div>
+                    <!-- Hamburguer -->
+                    <div class="hamburguer">
+                        <button id="hamburguerBtn" class="btn" onclick="menuShow(1)"><i id="iconAngleHide" class="fa-solid fa-angle-left fa-xl" style="color: #ffffff;"></i></button>
+                    </div>
 
-                
-                <div id="MenuAbsolute" class="col-2">
-                    <div id="Menu">
-                        <div id="paginas">
-                            <a class="linkBrancoLaranja" href="./index.html">Início</a><br><br>
+                    <!-- Menu em si -->
+                    <div id="MenuAbsolute" class="col-2">
+                        <div id="Menu">
+                            <div id="paginas">
+                                <a class="linkBrancoLaranja" href="./index.html">Início</a><br><br>
 
-                            <i id="iconAngleDrop" class="fa-sharp fa-solid fa-angle-down" onclick="dropdownList(1)"></i>
-                            <button class="dropText desistilizacao textoBranco" type="button" onclick="dropdownList(1)">Categorias</button><br>
-                            
-                            <div id="dropItens">
-                                <a class="linkBrancoLaranja" href="./ensino.html">Ensino</a><br>
-                                <a class="linkBrancoLaranja" href="./pesquisa.html">Pesquisa</a><br>
-                                <a class="linkBrancoLaranja" href="./extensao.html">Extensão</a><br>
+                                <i id="iconAngleDrop" class="fa-sharp fa-solid fa-angle-down" onclick="dropdownList(1)"></i>
+                                <button class="dropText desistilizacao textoBranco" type="button" onclick="dropdownList(1)">Categorias</button><br>
+                                
+                                <div id="dropItens">
+                                    <a class="linkBrancoLaranja" href="./ensino.html">Ensino</a><br>
+                                    <a class="linkBrancoLaranja" href="./pesquisa.html">Pesquisa</a><br>
+                                    <a class="linkBrancoLaranja" href="./extensao.html">Extensão</a><br>
+                                </div>
+                                
+                                <a class="linkBrancoLaranja" href="./sobre.html">Sobre nós</a><br>
+
+                                <a class="linkBrancoLaranja" href="#rodape">Contato</a>
                             </div>
-                            
-                            <a class="linkBrancoLaranja" href="./sobre.html">Sobre nós</a><br>
-
-                            <a class="linkBrancoLaranja" href="#rodape">Contato</a>
                         </div>
                     </div>
-                </div>
+                <!-- Fim do Menu -->
 
                 <!-- Conteúdo -->
                 <div class="col">

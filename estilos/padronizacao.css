@@ -25,8 +25,11 @@ body{
     align-items: center;
     justify-content: center;
 }
-.centralizar {
+.centralizarTexto {
     text-align: center;
+}
+.jutificarTexto {
+    text-align: justify;
 }
 .desistilizacao {
     text-decoration: none;
