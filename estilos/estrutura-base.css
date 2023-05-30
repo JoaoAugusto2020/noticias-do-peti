@@ -5,7 +5,7 @@
     background-color: #080F47;
     color: white;
 }
-#Logo {
+.Logo {
     display: flex;
     justify-content: center;
     align-items: center;
