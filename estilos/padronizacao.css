@@ -38,6 +38,10 @@ body{
     margin: 0px;
     padding: 0px;
 }
+.underline:hover {
+    color: #FF6300;
+    text-decoration: underline;
+}
 .textoBranco, .linkBrancoAzul, .linkBrancoLaranja {
     color: white;
     text-decoration: none;
@@ -45,6 +49,12 @@ body{
 .textoPreto, .linkPretoAzul, .linkPretoLaranja {
     color: black;
     text-decoration: none;
+}
+.textoAzul {
+    color: #080F47;
+}
+.textoLaranja {
+    color: #FF6300;
 }
 .linkBrancoLaranja:hover {
     color: #080F47;
@@ -64,7 +74,6 @@ body{
 }
 .titulo {
     margin: 50px 0px 20px 0px;
-    
 }
 .texto-pequeno {
     font-size: xx-small;
