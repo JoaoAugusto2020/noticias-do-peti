@@ -1,0 +1,22 @@
+.noticiaCard {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 25px;
+    background: gray;
+    width: 400px;
+    height: 500px;
+    padding: 0px;
+}
+.noticiaCard > .texto-grande {
+    margin: 15px 10px;
+}
+.imgNoticia {
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    bottom: 0px;
+    /* tá complicado essa parte, veja o curso de position e display */
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
