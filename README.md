@@ -7,8 +7,7 @@ Este é um site que foi desenvolvido para fins de comparação de Frameworks de 
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Cor Principal       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Cor Secundária       | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Cor Complementar       | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Cor exemplo       | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| Cor Principal       | ![#FF6300](https://via.placeholder.com/10/ff6300?text=+) #FF6300 |
+| Cor Secundária       | ![#080F47](https://via.placeholder.com/10/080f47?text=+) #080F47 |
+
 
