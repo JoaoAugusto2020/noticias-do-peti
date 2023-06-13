@@ -21,7 +21,8 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-.gradientHidden {
+/* NÃO ESTÁ SENDO NECESSÁRIO POR ENQUANTO
+.gradientHiddenNoticias { 
     position: absolute;
     top: 50px;
     left: 30px;
@@ -29,4 +30,4 @@
     height: 50px;
 
     background-image: linear-gradient(transparent, #080F47);
-}
+}*/
