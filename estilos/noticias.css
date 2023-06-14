@@ -12,7 +12,8 @@
     word-wrap: break-word;
     overflow: hidden;
     margin: 15px 10px;
-    height: 50px;
+    height: auto;
+    max-height: 50px;
 }
 .imgNoticia {
     width: 100%;
