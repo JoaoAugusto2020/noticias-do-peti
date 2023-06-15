@@ -1,15 +1,7 @@
-html,body {
-    top: 0px;
-    bottom: 0px;
-}
 
-.col:has(.info){
-    background-color: #080F47;
-    top: 0px;
-    bottom: 0px;
-}
-.info {
-    text-align: center;
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
 }
 
 .login {
