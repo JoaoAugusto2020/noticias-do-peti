@@ -21,10 +21,45 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="login center-block">
-            <div class="Logo">
-                <a href="./index.html"><img class="logoImg" src="./imagens/logos/Logo Transparente Branca.png" alt="Logo"></a>
+        <div class="conteudo">
+
+            <div class="row">
+
+                <div class="col-8 divLogin">
+                    
+                    <div class="Logo mb-5">
+                        <a href="./index.html"><img class="logoImg" src="./imagens/logos/Logo Transparente Preto.png" alt="Logo"></a>
+                    </div>
+                    
+                    <div class="login">
+                        <h1>Entrar</h1>
+
+                        <form id="formLogin" action="#">
+                            <label for="emailInput" class="esquerdaTexto mb-0"><h5>Email:</h5></label>
+                            <input type="email" class="form-control mb-3" id="emailInput" name="email" placeholder="Insira um email" required/>
+
+                            <label for="senhaInput" class="esquerdaTexto mb-0"><h5>Senha:</h5></label>
+                            <a href="#" class="linkBrancoLaranja esqueceuSenha">Esqueceu sua senha?</a>
+
+                            <input type="password" class="form-control mb-3" id="senhaInput" name="senha" placeholder="Mínimo de 8 caracteres" required/>
+
+                            <p>Não tem uma conta? <a href="#" class="linkBrancoLaranja">Criar uma conta.</a></p>
+                            <div class="direitaTexto">
+                                <button type="submit" class="btn btn-success">Enviar</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="col-4 divInfo p-4 textoBranco">
+                    <img src="./imagens/cadeado.gif" class="w-50" alt="">
+                    <h3 class="centralizarTexto">Faça sua autenticação para receber em primeira mão todas as notícias do PETi via email!</h3>
+                    </ul>
+                </div>
+
             </div>
+
         </div>
     </div>
 </body>

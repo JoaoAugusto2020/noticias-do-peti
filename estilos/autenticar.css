@@ -1,17 +1,60 @@
+.divLogin {
+    background-color: rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
 
-.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0px;
+    padding: 0px;
+}
+.divInfo {
+    background-color: #080F47;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
     margin: 0px;
     padding: 0px;
 }
 
-.login {
-    height: 500px;
-    width: 500px;
 
-    border-radius: 50px;
+
+
+
+
+.login {
+    height: auto;
+    width: 100%;
+    padding: 50px 100px;
+
     background: rgb(255,99,0);
     background: -moz-linear-gradient(225deg, rgba(255,99,0,1) 0%, rgba(255,138,64,1) 100%);
     background: -webkit-linear-gradient(225deg, rgba(255,99,0,1) 0%, rgba(255,138,64,1) 100%);
     background: linear-gradient(225deg, rgba(255,99,0,1) 0%, rgba(255,138,64,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff6300",endColorstr="#ff8a40",GradientType=1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#formLogin {
+    width: 500px;
+}
+.esqueceuSenha {
+    float: right;
 }
