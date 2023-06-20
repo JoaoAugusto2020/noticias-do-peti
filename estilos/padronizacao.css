@@ -31,6 +31,9 @@ body{
 .jutificarTexto {
     text-align: justify;
 }
+.direitaTexto {
+    text-align: right;
+}
 .desistilizacao {
     text-decoration: none;
     background-color: transparent;
