@@ -56,8 +56,16 @@
 }
 
 
-#formLogin {
+#formAuth {
     width: 500px;
+}
+#formCreate, #textoCreate {
+    display: none;
+    flex-direction: column;
+}
+#formLogin, #textoLogin {
+    display: flex;
+    flex-direction: column;
 }
 .esqueceuSenha {
     float: right;
