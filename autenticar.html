@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./estilos/estilos.css">
     <script type="text/javascript" src="./scripts/#"></script> <!-- Definir JS da página (se houver) -->
     <script type="text/javascript" src="./scripts/base.js"></script>
+    <script type="text/javascript" src="./scripts/autenticar.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -31,10 +32,32 @@
                         <a href="./index.html"><img class="logoImg" src="./imagens/logos/Logo Transparente Preto.png" alt="Logo"></a>
                     </div>
                     
-                    <div class="login">
+                    <div class="login" id="formLogin">
+                        <h1>Entrar</h1>
+
+                        <form id="formAuth" action="#">
+                            <label for="emailInput" class="esquerdaTexto mb-0"><h5>Email:</h5></label>
+                            <input type="email" class="form-control mb-3" id="emailInput" name="email" placeholder="Insira o seu email" required/>
+
+                            <label for="senhaInput" class="esquerdaTexto mb-0"><h5>Senha:</h5></label>
+                            <a href="#" class="linkBrancoLaranja esqueceuSenha">Esqueceu sua senha?</a>
+
+                            <input type="password" class="form-control mb-3" id="senhaInput" name="senha" placeholder="Insira a sua senha" required/>
+
+                            <p>Não tem uma conta? <button class="desistilizacao linkBrancoLaranja" type="none" onclick="autenticarCreate()">Criar uma conta.</button></p>
+                            <div class="direitaTexto">
+                                <button type="submit" class="btn btn-success">Enviar</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+
+
+                    <div class="login" id="formCreate">
                         <h1>Cadastrar</h1>
 
-                        <form id="formLogin" action="#" class="w-75">
+                        <form id="formAuth" action="#" class="w-75">
                             <div class="row">
                                 <div class="col">
                                     <label for="userInput" class="esquerdaTexto mb-0"><h5>Nome de Usuário:</h5></label>
@@ -52,10 +75,7 @@
                                 </div>
                             </div>
                             
-
-                            
-
-                            <p>Já possui uma conta? <a href="./autenticar-login.html" class="linkBrancoLaranja">Entrar.</a></p>
+                            <p>Já possui uma conta? <button class="desistilizacao linkBrancoLaranja" type="none" onclick="autenticarLogin()">Entrar.</button></p>
                             <div class="direitaTexto">
                                 <button type="submit" class="btn btn-success">Enviar</button>
                             </div>
@@ -70,8 +90,16 @@
                         <img src="./imagens/icons/gif-login/cadeado.gif" class="cadeado" alt="">
                     </div>
                     
-                    <h3 class="centralizarTexto">Faça o seu cadastro para receber em primeira mão todas as notícias do PETi via email!</h3>
-                    
+
+                    <div id="textoLogin">
+                        <h3 class="centralizarTexto">Sempre tenha a segurança em primeiro lugar! Não compartilhe seus dados pessoais com ninguém!</h3>
+                        <br>
+                        <h6>Nós nunca enviamos email ou SMS solicitando seus dados!</h6>
+                    </div>
+
+                    <div id="textoCreate">
+                        <h3 class="centralizarTexto">Faça o seu cadastro para receber em primeira mão todas as notícias do PETi via email!</h3>
+                    </div>
                 </div>
 
             </div>
